@@ -78,3 +78,21 @@ sortir_voiture("XYZ789")
 print("\nParc après sortie :")
     for v in parc_voitures:
         print(v)
+
+
+parc_voitures = [
+    Voiture("Toyota", "Corolla", 2020, "ABC123"),
+    Voiture("audi", "RS3", 2019, "XYZ789"),
+    Voiture("bmw", "noir", 2021, "LMN456")
+]
+
+
+print("Parc avant sortie :")
+for v in parc_voitures:
+    print(v)
+
+sortir_voiture("XYZ789")
+
+print("\nParc après sortie :")
+for v in parc_voitures:
+    print(v)
