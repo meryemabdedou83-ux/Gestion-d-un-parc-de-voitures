@@ -31,3 +31,6 @@ def sortirVoiture(self, voiture):
         print("Voiture sortie du parc")
     else:
         print("Voiture non trouvée")
+
+def calculerNbrPlacesLibres(self):
+    return self.capacite - len(self.listeVoitures)
