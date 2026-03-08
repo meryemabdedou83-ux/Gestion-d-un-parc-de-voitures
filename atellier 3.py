@@ -34,3 +34,18 @@ def sortirVoiture(self, voiture):
 
 def calculerNbrPlacesLibres(self):
     return self.capacite - len(self.listeVoitures)
+
+from voiture import Voiture
+from parc import Parc
+
+parc = Parc(1, "Ottawa", 3)
+
+v1 = Voiture("111", "Toyota", "Rouge")
+v2 = Voiture("222", "Honda", "Noir")
+
+parc.entrerVoiture(v1)
+parc.entrerVoiture(v2)
+
+parc.sortirVoiture(v1)
+
+print("Places libres:", parc.calculerNbrPlacesLibres())
