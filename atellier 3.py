@@ -62,3 +62,19 @@ parc_voitures.append(voiture3)
 print("Voitures dans le parc :")
 for v in parc_voitures:
     print(v)
+
+
+def sortir_voiture(immatriculation):
+    for voiture in parc_voitures:
+        if voiture.immatriculation == immatriculation:
+                parc_voitures.remove(voiture)
+                print(f"La voiture {voiture} est sortie du parc.")
+                return
+    print("Voiture non trouvée dans le parc.")
+
+
+sortir_voiture("XYZ789")
+
+print("\nParc après sortie :")
+    for v in parc_voitures:
+        print(v)
