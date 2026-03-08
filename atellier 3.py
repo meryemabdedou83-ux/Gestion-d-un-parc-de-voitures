@@ -49,3 +49,16 @@ parc.entrerVoiture(v2)
 parc.sortirVoiture(v1)
 
 print("Places libres:", parc.calculerNbrPlacesLibres())
+
+# Création
+voiture1 = Voiture("Toyota", "Corolla", 2020, "ABC123")
+voiture2 = Voiture("audi", "RS3", 2019, "XYZ789")
+voiture3 = Voiture("bmw", "noir", 2021, "LMN456")
+
+parc_voitures.append(voiture1)
+parc_voitures.append(voiture2)
+parc_voitures.append(voiture3)
+
+print("Voitures dans le parc :")
+for v in parc_voitures:
+    print(v)
